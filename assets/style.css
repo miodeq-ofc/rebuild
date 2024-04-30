@@ -218,7 +218,6 @@ header
     margin-top: 30px;
     width: 90%;
     position: relative;
-    background-color: red;
     height: 440px;
     box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
 	transform: translatey(0px);
@@ -231,10 +230,10 @@ header
     --border-angle: 0turn;
     --main-bg: conic-gradient(
         from var(--border-angle),
-        #213,
-        #112 5%,
-        #112 60%,
-        #213 95%
+        #131313,
+        #131313 5%,
+        #131313 60%,
+        #131313 95%
       );
     
     border: solid 5px transparent;
@@ -245,7 +244,6 @@ header
       var(--main-bg) padding-box,
       var(--gradient-border) border-box, 
       var(--main-bg) border-box;
-    background-color: #131313;
     background-position: center center;
   
     
@@ -308,9 +306,15 @@ header
 
 
 
+
+
+
+
+  
+
 @keyframes float {
 	0% {
-		box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+		box-shadow: 0 5px 25px 0px rgba(0, 0, 0, 0.6);
 		transform: translatey(0px);
 	}
 	50% {
