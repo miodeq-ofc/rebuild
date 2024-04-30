@@ -164,8 +164,14 @@ body
 .nav-container input[type="checkbox"]:checked ~ .logo{
   display: none;
 }
+.nav-container input[type="checkbox"]:not(:checked) ~ .nav-container .hamburger-lines .line {
 
-
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #ffffff;
+  }
 
 
 .wrapper {
@@ -176,7 +182,7 @@ body
   
   .typing-demo {
     width: 17ch;
-    animation: typing 2s steps(17), blink .5s step-end infinite alternate, unsetMargin 0s linear 7s forwards;
+    animation: typing 2s steps(17), blink .5s step-end infinite alternate, unsetMargin 0s linear 2s forwards;
     white-space: nowrap;
     overflow: hidden;
     font-family: monospace;
