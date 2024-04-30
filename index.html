@@ -20,11 +20,11 @@
     <nav>
         <div class="navbar">
           <div class="container nav-container">
-              <input class="checkbox" type="checkbox" name="" id="" />
+              <input class="checkbox" type="checkbox" name="" id="myCheckbox" onmouseenter="menuon()" onmouseleave="menuoff()"/>
               <div class="hamburger-lines">
-                <span class="line line1"></span>
-                <span class="line line2"></span>
-                <span class="line line3"></span>
+                <span class="line line1" id="l1"></span>
+                <span class="line line2" id="l2"></span>
+                <span class="line line3" id="l3"></span>
               </div>  
             <div class="logo">
               <h1>
@@ -36,11 +36,11 @@
             </h1>
             </div>
             <div class="menu-items">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">about</a></li>
-              <li><a href="#">blogs</a></li>
-              <li><a href="#">portfolio</a></li>
-              <li><a href="#">contact</a></li>
+              <li><a href="#" onclick="turnoffmenu()">Home</a></li>
+              <li><a href="#" onclick="turnoffmenu()">about</a></li>
+              <li><a href="#" onclick="turnoffmenu()">blogs</a></li>
+              <li><a href="#" onclick="turnoffmenu()">portfolio</a></li>
+              <li><a href="#" onclick="turnoffmenu()">contact</a></li>
             </div>
           </div>
         </div>

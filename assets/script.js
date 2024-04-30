@@ -9,3 +9,26 @@ function typeWriter() {
     setTimeout(typeWriter, speed);
   }
 }
+
+
+function menuon()
+{
+  document.getElementById('l1').style.backgroundColor = "gray";
+  document.getElementById('l2').style.backgroundColor = "gray";
+  document.getElementById('l3').style.backgroundColor = "gray";
+}
+
+function menuoff()
+{
+  document.getElementById('l1').style.backgroundColor = "white";
+  document.getElementById('l2').style.backgroundColor = "white";
+  document.getElementById('l3').style.backgroundColor = "white";
+}
+
+
+
+function turnoffmenu() {
+  var checkbox = document.getElementById("myCheckbox");
+  checkbox.checked = !checkbox.checked;
+}
+

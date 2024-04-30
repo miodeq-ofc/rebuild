@@ -50,13 +50,16 @@ body
   width: 150px;
   float: left;
   transition: 0.2s ease-in-out;
+  border: 2px solid #060606 ;
  
 
 }
 
 .navbar .nav-container a:hover{
     transition: 0.2s ease-in-out;
-    background-color: rgb(156, 69, 141);
+    background-color: rgb(0, 10, 22);
+    letter-spacing: 1px;
+    border: 2px rgb(0, 84, 179) solid;
 
 }
 
@@ -139,6 +142,7 @@ body
 
   color: #ffffff;
 }
+ 
 
 .nav-container input[type="checkbox"]:checked ~ .menu-items {
   transform: translateX(0);
@@ -237,7 +241,8 @@ header
       );
     
     border: solid 5px transparent;
-    --gradient-border: conic-gradient(from var(--border-angle), transparent 25%, rgb(0, 183, 255), rgb(255, 0, 183) 100%, rgb(119, 0, 255));
+    --gradient-border: conic-gradient(from var(--border-angle), 
+    transparent 25%, rgb(0, 183, 255), rgb(191, 0, 255) 100%, rgb(72, 0, 255));
     
     background: 
       
@@ -263,8 +268,8 @@ header
 {
     position: absolute;
     top: 15%;
-    left: 1%;
-    width: 98%;
+    left: 13px;
+    right: 13px;
     height: 1%;
     background-color: white;
     border-radius: 20px
@@ -342,6 +347,7 @@ article
 {
     position: absolute;
     top: 100%;
-    width: 100%;
+    left: 5%;
+    width: 90%;
     height: 500px;
 }
