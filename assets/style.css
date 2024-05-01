@@ -403,12 +403,13 @@ header
 .asphalt
 {
   position: absolute;
-  width: 120%;
+  width: 96%;
   height: 50px;
   background: #292929;
   transform-style: preserve-3d;
   transform-origin: bottom;
   transform: perspective(50px) rotateX(10deg);
+  box-shadow: 0 15px 25px 0px rgba(0, 0, 0, 0.6);;
 }
 .asphalt::before
 {
@@ -524,14 +525,34 @@ article
    float: left;
    margin-left: 5%;
    width: 90%;
-   margin-top: 50px;
+   margin-top: 10px;
    overflow-x: hidden;
 }
 
 
 .spacescroll
 {
-    height: 60px;
+    height: 0px;
     width: 100%;
     float: left;
+}
+
+.about
+{
+  background-color: rgb(18, 8, 8);
+  width: 100%;
+  left: 0%;
+  height: 100%;
+  position: absolute;
+}
+
+
+.gall 
+{
+  float: left;
+  width: 100%;
+  margin-top: 110vh;
+  background-color: red;
+  height: 400px;
+
 }
