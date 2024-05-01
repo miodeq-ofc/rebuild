@@ -399,9 +399,9 @@ header
 .asphalt
 {
   position: absolute;
-  width: 100%;
+  width: 120%;
   height: 50px;
-  background: #444;
+  background: #292929;
   transform-style: preserve-3d;
   transform-origin: bottom;
   transform: perspective(50px) rotateX(10deg);
@@ -416,7 +416,7 @@ header
   width: 100%;
   height: 6px;
   background: linear-gradient(90deg, #fff 0%, #fff 60%,
-   #444 60%, #444 100%);
+   #292929 60%, #292929 100%);
    background-size: 150px; /**/
    animation: roadanimate 1.1s linear infinite;
 }
@@ -427,7 +427,7 @@ header
   position: absolute;
   width: 100%;
   height: 12px;
-  background: #222;
+  background: #1b1b1b;
   top: 100%;
   transform-origin: top;
 
