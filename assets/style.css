@@ -265,36 +265,54 @@ header
     width: 90%;
     position: relative;
     height: 440px;
-    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    
 	transform: translatey(0px);
-	animation: float 6s ease-in-out infinite, bg-spin 13s linear infinite;;
+	animation: float 6s ease-in-out infinite/*, border-flicker 2s linear infinite*/;
     border-radius: 20px;
-    border: #1d46ff 2px solid;
-    color: white;
-    text-shadow: 0 1px 0 #000;
-    
-    --border-angle: 0turn;
-    --main-bg: conic-gradient(
-        from var(--border-angle),
-        #121212,
-        #121212 5%,
-        #121212 60%,
-        #121212 95%
-      );
-    
-    border: solid 01px transparent;
-    --gradient-border: conic-gradient(from var(--border-angle), 
-    transparent 25%, rgb(0, 183, 255), rgb(191, 0, 255) 99%, rgb(72, 0, 255));
-    
-    background: 
-      
-      var(--main-bg) padding-box,
-      var(--gradient-border) border-box, 
-      var(--main-bg) border-box;
-    background-position: center center;
   
+    color: white;
+
+    border: 0.15em solid var(--glow-color);
+    background: none;
+
+    -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+    0px 0px 0.5em 0px var(--glow-color), 0 25px 25px 0px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+    0px 0px 0.5em 0px var(--glow-color), 0 5px 25px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+    0px 1px .5em 0px var(--glow-color), 0 15px 25px 0px rgba(0, 0, 0, 0.6);
+
+    
     
 }
+
+@keyframes float {
+  0% {
+    
+    transform: translatey(0px);
+  }
+  50% {
+    
+    transform: translatey(-20px);
+  }
+  100% {
+
+    transform: translatey(0px);
+  }
+}
+
+
+
+
+
+
+:root {
+  --glow-color: rgb(37, 137, 251);
+}
+
+
+
+
 
 .headertitle
 {
@@ -315,6 +333,7 @@ header
     right: 13px;
     height: 1%;
     background-color: white;
+
     border-radius: 20px
 }
 .headermessage
@@ -367,20 +386,8 @@ header
 
   
 
-@keyframes float {
-	0% {
-		box-shadow: 0 5px 25px 0px rgba(0, 0, 0, 0.6);
-		transform: translatey(0px);
-	}
-	50% {
-		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
-		transform: translatey(-20px);
-	}
-	100% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-		transform: translatey(0px);
-	}
-}
+
+
 
 
 .bg
