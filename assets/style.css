@@ -3,13 +3,14 @@
 *{
 margin: 0 auto;
 font-family: sans-serif;
+overflow-x: hidden;
 
 
 }
 
 /* custom scrollbar */
 ::-webkit-scrollbar {
-    width: 20px;
+    width: 15px;
   }
   
   ::-webkit-scrollbar-track {
@@ -18,7 +19,7 @@ font-family: sans-serif;
   
   ::-webkit-scrollbar-thumb {
     background-color: #d6dee1;
-    border-radius: 20px;
+    border-radius: 15px;
     border: 6px solid transparent;
     background-clip: content-box;
   }
@@ -399,7 +400,7 @@ header
 .asphalt
 {
   position: absolute;
-  width: 120%;
+  width: 100%;
   height: 50px;
   background: #292929;
   transform-style: preserve-3d;
@@ -451,12 +452,12 @@ header
   
 .road img
 {
-  z-index: 9999;
+  z-index: 98;
   width: 260px;
   margin-top: -30px;
   animation: caranimate 10.1s linear infinite;
   transition: 1s;
-  margin-left: 10%;
+  
 }
 
 
@@ -511,7 +512,7 @@ header
     position: fixed;
     height: 60px;
     left: 0%;
-    z-index: 10;
+    z-index: 99;
 }
 
 article
