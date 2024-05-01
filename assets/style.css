@@ -5,7 +5,13 @@
     font-family: sans-serif;
     
 }
+/*
+html{
 
+    scroll-behavior: smooth;
+    
+    }
+*/
 body
 {
     background-color: rgb(19, 19, 19);
@@ -174,6 +180,9 @@ body
   }
 
 
+
+
+
 .wrapper {
     display: grid;
     place-items: right;
@@ -187,6 +196,7 @@ body
     overflow: hidden;
     font-family: monospace;
     font-size: 2em;
+    cursor: default;
   }
 
   .typing-demo {
@@ -268,6 +278,7 @@ header
     width: 100%;    
     font-weight: bold;
     font-size: 35px;
+    cursor: default;
 }
 
 .headerspace
@@ -286,7 +297,7 @@ header
     width: 100%;
     top: 16%;
     height: 84%;
-  
+    cursor: default;
 }
 
 .headertext p
@@ -295,8 +306,15 @@ header
     margin: 13px;
 }
 
-
-
+#messagecenter {
+    font-size: 110%;
+    margin: 0px;
+    left: 13px;
+    width: 95%;
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+}
 
 
 
@@ -351,9 +369,9 @@ header
 
 article
 {
-    position: absolute;
-    top: 100%;
-    left: 5%;
-    width: 90%;
-    height: 500px;
+    
+   float: left;
+   margin-left: 5%;
+   width: 90%;
+   margin-top: 300px;
 }
