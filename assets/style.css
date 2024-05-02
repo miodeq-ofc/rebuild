@@ -233,6 +233,7 @@ body
 
   .typing-demo {
     border-right: #ffffff solid 3px;
+    margin-left: 10px;
 }
 
 @keyframes unsetMargin {
@@ -261,8 +262,7 @@ header
     width: 100%;
     background-color: rgb(19, 19, 19);
     margin-top: 100px;
-    max-height: 600px;
-    min-height: 500px;
+    height: 70vh;
     overflow-x: hidden;
 }
 
@@ -271,7 +271,8 @@ header
     margin-top: 30px;
     width: 90%;
     position: relative;
-    height: 440px;
+    height: 240px ;
+    
     
 	transform: translatey(0px);
 	animation: float 6s ease-in-out infinite/*, border-flicker 2s linear infinite*/;
@@ -325,17 +326,18 @@ header
 {
     
     position: absolute;
-    height: 15%;
+    height: 62px;
     width: 100%;    
     font-weight: bold;
     font-size: 35px;
     cursor: default;
+    text-align: center;
 }
 
 .headerspace
 {
     position: absolute;
-    top: 15%;
+    top: 62px;
     left: 13px;
     right: 13px;
     height: 1%;
@@ -350,6 +352,7 @@ header
     top: 16%;
     height: 84%;
     cursor: default;
+    font-size: 16px;
 }
 
 .headertext p
@@ -661,7 +664,16 @@ p
 
 @media only screen and (max-width:800px) 
 {
-  
+
+
+  .headertext
+  {
+    height: 340px;
+  }
+  .typing-demo
+  {
+    font-size: 25px;
+  }
 
   .aboutdiv img
 {
@@ -739,6 +751,7 @@ p
 
   
 }
+
 
 
 .social-btns a
